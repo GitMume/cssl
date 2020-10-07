@@ -7,9 +7,9 @@
     <title>Variable01.html</title>
     <script>
         /*
-        -자스(ES5스펙)에서는 대소문자를 구분한다.
+        -JS(ES5스펙)에서는 대소문자를 구분한다.
         -하나의 명령행이 끝나면 ;로 명령의 끝을 알린다.
-        -자스에서는 변수에 넣은 값에 따라 그 변수의 자료형이 결정된다.
+        -JS에서는 변수에 넣은 값에 따라 그 변수의 자료형이 결정된다.
         -변수 선언:var라는 키워드 사용
         var 변수명;
         */
@@ -35,7 +35,7 @@
             '</br>num의 자료형:' + typeof (num) +
             ',num에 저장된 값:' + num);
         num = "문자열입니다";
-        //자스에서는 문자열을 나타내기 위해 '나 "으로 감싼다.
+        //JS에서는 문자열을 나타내기 위해 '나 "으로 감싼다.
         document.write(
             '</br>num의 자료형:' + typeof (num) +
             ',num에 저장된 값:' + num);
@@ -45,7 +45,7 @@
         document.write(
             '<h2>,(콤마)로 구분해서 동시에 변수 여러개 선언하기</h2>');
         //4] 여러개의 변수를 콤마(,)로 구분해서 동시 선언 및 초기화
-        var num1 = 10, num2, str1 = '자스', str2;
+        var num1 = 10, num2, str1 = 'JS', str2;
         //undefined+숫자=NaN(Not a Number)도 하나의 값이고 number타입이다.
         document.write(num1 + num2 + "</br>");
         document.write(typeof (num1 + num2) + "</br>");
@@ -57,8 +57,8 @@
         //문자열+undefinded = 문자열(즉 값은 문자열 undefinded)    
         document.write(str1 + str2 + '<br/>');
         document.write(typeof (str1 + str2) + '<br/>');
-        //5] 자스의 기타 자료형
-        document.write('<h2>자스의 기타 자료형</h2>');
+        //5] JS의 기타 자료형
+        document.write('<h2>JS의 기타 자료형</h2>');
         var date = new Date();
         document.write(
             'date의 자료형:' + typeof (date) +

@@ -14,14 +14,14 @@
         //   우선순위: *, /, % > +, -
         document.write('<h2>산술 연산자</h2>');
         document.write('3 % 5 * 2 + 10 / 5=' + (3 % 5 * 2 + 10 / 5));
-        document.write('<br/> 5/3는 ' + 5 / 3); //자바는 1, 자스는 소수점까지...
+        document.write('<br/> 5/3는 ' + 5 / 3); //자바는 1, JS는 소수점까지...
         //2] 비교연산자: >, >=, <, <=, ==, !=
         //   우선순위가 모두 동일
-        /* 자스에서는 조건식이나 0이나 null이나 false면 false로 처리되고
+        /* JS에서는 조건식이나 0이나 null이나 false면 false로 처리되고
            그 이외 모든 값을 true로 판단한다 */
         document.write('<h2>비교 연산자</h2>');
         //내부적으로 한자씩 유니코드값으로 비교
-        document.write('가나다' >= '가다나'); //자바x, 자스o
+        document.write('가나다' >= '가다나'); //자바x, JSo
         document.write('<br/>');
         //3 > 9는 결과가 false, 0은 false로 간주됨 고로 false==false비교와 같다.
         document.write(3 > 9 == 0); //false==false

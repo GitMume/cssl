@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form13_2.html</title>
+</head>
+<!--
+    [INPUT태그]
+    form태그의 하위요소로 type속성에
+    다양한 값을 지정함으로써 여러가지 형태의
+    모양을 만들어 사용자로부터 입력이나 선택을
+    받을 수 있는 태그
+    주요 속성
+    type: 모양을 나타내는 값 지정
+    text, password, checkbox, radio등
+
+    text: 한줄 입력상자
+    password:입력시 입력한 값이 노출안되게
+    checkbox: 여러개 선택가능한 체크박스 표시할 때
+    체크된 상태를 미리 선택된 박스를 보여주고자 할 때는
+    checked="checked"속성 추가
+
+    submit
+    reset
+    image
+    button
+    file
+
+    --선택 상자
+    input태그가 아닌 select 태그로 시작.
+
+-->
+
+<body>
+    <div>
+        <h2>form태그의 하위 요소들(태그들)</h2>
+        <h3>input계열의 type="text"</h3>
+        기본텍스트 상자: <input type="text" /><br />
+        속성 추가: <input type="text" size='10' maxlength="5" value="기본텍스트" disabled />
+        주민 번호: <input type="text" size="6" maxlength="6" />
+        - <input type="text" />
+        홈페이지: <input type="text" value="http://">
+        <h3>type="password"</h3>
+        <!--
+        type이 text일때와 속성이 동일하다
+        입력한 값이 노출이 안되고 ●모양으로 입력됨
+    -->
+        기본 패스워드: <input type="password" /> <br />
+        패스워드 지정: <input type="password" value="1234" />
+        <h3>type="checkbox"</h3>
+
+        <h3>다양한 버튼</h3>
+        <fieldset>
+            <legend>각종 버튼</legend>
+            <form action="https://www.nate.com">
+                아이디: <input type="text" name="id" placeholder="아이디를 입력">
+                성별:
+                <input type="radio" name="gender" value="man" /> 남자
+                <input type="radio" name="gender" value="woman" /> 여자
+                관심과목:
+                <input type="checkbox" name="subject" value="자바" /> 자바
+                <input type="checkbox" name="subject" value="HTML5" checked /> HTML5
+                <input type="checkbox" name="subject" value="CSS3" /> CSS3
+                <!--클릭시 무조건 action에 지정한 페이지나 URL로 데이터 전송 및 이동-->
+                <input type="submit" value="SUBMIT버튼" />
+                <!--클릭시 폼의 하위요소의 값들이 원래대로 초기화됨-->
+                <input type="reset" value="RESET버튼" />
+                <!--일반 버튼 모양으로 아무런 기능도 하지 않음-->
+                <input type="button" value="BUTTON버튼" />
+                <button>버튼태그</button>
+                <!--브라우저 종류나 버전에 따라 submit기능이 있기도하고 없기도 함-->
+                <input type="image" alt="이미지버튼" src="../../Images/button.png" style="width: 70px;height: 32px;" />
+            </form>
+        </fieldset>
+        <h3>&lt;select&gt;태그</h3>
+        <form>
+            <select name="grade">
+                <option value=""> >>학력선택<< </option>
+                <option value="ele"> 초등학교</option>
+                <option value="mid"> 중학교</option>
+                <option value="high" selected> 고등학교</option>
+                <option value="univ"> 대학교</option>
+            </select>
+            <input type="submit" value="확인" />
+        </form>
+        <h3>&lt;textarea&gt;</h3>
+        기본: <textarea></textarea>
+        속성추가: <textarea cols="50" rows="10" value="기본텍스트"></textarea><br />
+        기본 텍스트 적용: <textarea cols="50" rows="10">기본텍스트</textarea>
+
+
+    </div>
+</body>
+
+</html>
